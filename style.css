@@ -67,8 +67,10 @@ p {
     font-size: 24px ;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-     text-decoration: none; /* Permite decorar el texto  */
-     color: #f6f6f6;
-     border: 2px solid #22d4fd;
-     
+    text-decoration: none; /* Permite decorar el texto  */
+    color: #f6f6f6;
+    border: 2px solid #22d4fd;
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
 }
