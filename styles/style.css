@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* VARIABLES EN CSS */
+/* :ROOT CAMBIA DE TODA LA PAGINA */
+:root {
+    --color-primario: #113F67;
+    --color-secundario: #34699A;
+    --color-terciario: #58A0C8;
+    --fuente-montserrat: 'Montserrat', sans serif;
+    --fuente-krona: 'Krona One', sans serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    /* Flexbox a toda la pagina */
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    /* height: 100vh; viewport altura */
+    box-sizing: border-box;
+    }
+
+.header {
+    padding: 2% 0% 0% 15%;
+    }
+
+.header__menu {
+    display: flex;
+    gap: 80px; /*Distancia entre items*/
+
+}   
+
+.header__menu__link {
+    font-family: var(--fuente-montserrat);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-terciario);
+    text-decoration: none;
+
+}
+p {
+   margin: 10px;
+   /* border: 2px solid black; */
+   padding: 5px;
+}
+.presentacion {
+    display: flex;
+    /* Configuracion en linea */
+    align-items: center;
+    /* Cnetralizar los items */
+    /* margin: 10% 15%; */
+    padding: 8% 15%;
+    justify-content: space-between;
+    /* Justificar el contenido, con espacio entre ellos */
+}
+
+.presentacion__contenido {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 30 px;
+}
+.presentacion__contenido__titulo {
+    font-size: 36px;
+    font-family: var(--fuente-krona);
+
+}
+
+.titulo-destaque{
+    
+    color: var(--color-terciario);
+}
+.presentacion__contenido__parrafo {
+    font-size: 24px;
+    font-family: var(--fuente-montserrat);
+}
+.presentacion__enlaces {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /*Alinear los botones verticalmente */
+    align-items: center;
+    gap: 32px; /*Distancia entre items*/
+}
+.presentacion__enlaces__subtitulo {
+    font-family: var(--fuente-krona);
+    font-size: 24px;
+    font-weight: 400;
+
+}
+.presentacion__enlaces__link{
+    width: 378px;
+    
+    text-align: center;
+    padding: 21.5px 0px; /* permite agregar el padding del VERTICAL y Horizontal  */ 
+    border-radius: 8px;
+    font-size: 24px ;
+    font-family: var(--fuente-montserrat);
+    font-weight: 600;
+    text-decoration: none; /* Permite decorar el texto  */
+    color: var(--color-secundario);
+    border: 2px solid var(--color-terciario);
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+}
+.presentacion__enlaces__link:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+#imagen {
+    transition: transform 0.4s ease, background-color 0.4s ease; /* Transición suave para posición y fondo */
+}
+
+#imagen:hover {
+    background-color: rgba(34, 212, 253, 0.15); /* Color con opacidad, como en el ejemplo anterior */
+    border-radius: 32px;
+    transform: translateX(10px) translateY(-10px); /* Mueve 10px a la derecha y 10px hacia arriba */
+}
+
+.footer {
+    background-color: var(--color-terciario);
+    padding: 25px;
+    color: var(--color-primario);
+    text-align: center;
+    text-decoration:solid;
+    font-size: 24px;
+    font-family: var(--fuente-montserrat);
+    font-weight: 400;
+    border: 2px solid var(--color-primario);
+}
+.presentacion__contenido__texto a{
+    text-decoration: none;
+    color: var(--color-terciario);
+}
