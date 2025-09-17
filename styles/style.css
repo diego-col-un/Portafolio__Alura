@@ -4,9 +4,9 @@
 /* VARIABLES EN CSS */
 /* :ROOT CAMBIA DE TODA LA PAGINA */
 :root {
-    --color-primario: #113F67;
-    --color-secundario: #34699A;
-    --color-terciario: #58A0C8;
+    --color-primario: #000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
     --fuente-montserrat: 'Montserrat', sans serif;
     --fuente-krona: 'Krona One', sans serif;
 }
@@ -36,7 +36,7 @@ body {
 
 .header__menu__link {
     font-family: var(--fuente-montserrat);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--color-terciario);
     text-decoration: none;
@@ -65,7 +65,8 @@ p {
     gap: 30 px;
 }
 .presentacion__contenido__titulo {
-    font-size: 36px;
+    font-size: 2.25rem; 
+    /* 1 rem es 16px */
     font-family: var(--fuente-krona);
 
 }
@@ -75,7 +76,7 @@ p {
     color: var(--color-terciario);
 }
 .presentacion__contenido__parrafo {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fuente-montserrat);
 }
 .presentacion__enlaces {
@@ -87,7 +88,7 @@ p {
 }
 .presentacion__enlaces__subtitulo {
     font-family: var(--fuente-krona);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
 
 }
@@ -97,7 +98,7 @@ p {
     text-align: center;
     padding: 21.5px 0px; /* permite agregar el padding del VERTICAL y Horizontal  */ 
     border-radius: 8px;
-    font-size: 24px ;
+    font-size: 1.5rem ;
     font-family: var(--fuente-montserrat);
     font-weight: 600;
     text-decoration: none; /* Permite decorar el texto  */
