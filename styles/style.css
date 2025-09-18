@@ -56,10 +56,11 @@ p {
     padding: 8% 15%;
     justify-content: space-between;
     /* Justificar el contenido, con espacio entre ellos */
+    gap: 82px;
 }
 
 .presentacion__contenido {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 30 px;
@@ -93,8 +94,7 @@ p {
 
 }
 .presentacion__enlaces__link{
-    width: 378px;
-    
+    width: 50%;
     text-align: center;
     padding: 21.5px 0px; /* permite agregar el padding del VERTICAL y Horizontal  */ 
     border-radius: 8px;
@@ -111,6 +111,10 @@ p {
 .presentacion__enlaces__link:hover {
     background-color: var(--color-secundario);
     color: var(--color-primario);
+}
+
+.presentacion__contenido {
+    width: 50%;
 }
 
 #imagen {
@@ -137,4 +141,28 @@ p {
 .presentacion__contenido__texto a{
     text-decoration: none;
     color: var(--color-terciario);
+}
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+        gap: 10px;
+    }
+    
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion__contenido {
+        width: auto;
+    }
+    #imagen {
+        width: 80%;
+    }
+    /* Esto, siendo parte del responsive del sitio, donde declaramos un maximo como 1200 px para que empiece a cambiar  */
+    /* el tamaño o la posicion de los objetos despues de cruzar esta resolucion ( celulares, tablets )*/
 }
